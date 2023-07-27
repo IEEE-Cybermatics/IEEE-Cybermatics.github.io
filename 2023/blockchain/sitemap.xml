@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://ieee-cybermatics.github.io/2023/blockchain/index.html</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <!-- Add more URLs here -->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/cfp.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/cfw.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/oc.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/tpc.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/workshops.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/tba.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/remind.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/ps.html</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/download/IEEE_Blockchain2023.pdf</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/download/FBS2023-workshop.pdf</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/download/SPB2023.pdf</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ieee-cybermatics.github.io/2023/blockchain/download/Demos%20of%20Blockchain%20Applications.pdf</loc>
+  <lastmod>2023-07-26T06:16:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
