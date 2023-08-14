@@ -1,296 +1,884 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Cybermatics-2023 | IEEE Cybermetics 2023 Special Issues</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
 
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<HEAD>
-<TITLE>Cybermatics-2023 | IEEE Cybermetics 2023 Special Issues</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=utf-8">
-<LINK href="styles.css" type=text/css rel=stylesheet>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      @keyframes scispace-copilot-fade-in {
+        0% {
+          visibility: hidden;
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .scispace-plugin-maximized {
+        width: calc(100% - 420px) !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        background-color: #fff;
+        position: absolute;
+        z-index: 2147483655;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] div {
+        font-family: inherit !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        div
+        .scispace-plugin-highlight-cta-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-hightlight-tooltip {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in {
+        opacity: 0;
+        animation: scispace-copilot-fade-in 130ms ease-in-out 50ms forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in.hide {
+        opacity: 0;
+        animation: fade-out 100ms ease-in-out forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-divider {
+        margin: 8px 0px;
+        flex-shrink: 0;
+        border-width: 0px thin 0px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        align-self: stretch;
+        background: #fff;
+        opacity: 0.6;
+        width: 1px !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu
+        > button {
+        height: 100%;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:hover
+        .scispace-highlight-menu {
+        border-radius: 6px;
+        display: block;
+        position: absolute;
+        top: 36px;
+        background-color: #fff;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:visited
+        .scispace-highlight-menu {
+        display: block;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu {
+        width: max-content;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+        display: none;
+        padding: 10px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > button {
+        white-space: nowrap;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        svg {
+        width: 20px;
+        height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > p {
+        color: #252f35;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        margin-bottom: 8px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] button {
+        font-family: inherit !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        margin: 0 !important;
+        cursor: pointer;
+        outline: none;
+        color: #252f35 !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        background-color: #fff !important;
+        border: none;
+        border-radius: 6px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-transform: none !important;
+        height: max-content !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:hover {
+        background-color: #f2f3f3 !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:disabled {
+        opacity: 0.4 !important;
+        color: #252f35 !important;
+      }
+      .scispace-plugin-alert-overlay {
+        --tw-bg-opacity: 1;
+        background-color: #12181a;
+        background-color: rgb(18 24 26 / var(--tw-bg-opacity));
+        opacity: 0.5;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: fixed;
+        z-index: 2147483650;
+      }
+      .scispace-plugin-alertdialog {
+        width: 384px;
+        position: fixed;
+        top: calc(50% - 100px);
+        left: calc(50% - 192px);
+        padding: 24px;
+        border-radius: 0.375rem;
+        --tw-bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        z-index: 2147483651;
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+          var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .scispace-plugin-alertdialog .scispace-plugin-alertdialog-cta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+      .scispace-plugin-alertdialog h2,
+      .scispace-plugin-alertdialog p {
+        margin: 0 !important;
+      }
+      .scispace-plugin-alertdialog p {
+        margin-top: 12px !important;
+      }
+      .scispace-plugin-alertdialog h2 > span,
+      .scispace-plugin-alertdialog p > span {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        text-decoration-line: none;
+        line-height: 28px;
+        --tw-text-opacity: 1;
+        color: #47555a;
+        color: rgb(71 85 90 / var(--tw-text-opacity));
+      }
+      .scispace-plugin-alertdialog h2 > span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .scispace-plugin-alertdialog p > span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .scispace-plugin-alertdialog button {
+        font-family: inherit !important;
+        flex-direction: row;
+        outline: none;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 8px;
+        --tw-bg-opacity: 1;
+        border-radius: 0.375rem;
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 80px;
+        height: 36px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #47555a;
+        border: 0.8px solid #c6c8ca !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .scispace-plugin-alertdialog button:disabled {
+        opacity: 0.4 !important;
+      }
+      .scispace-plugin-alertdialog button.buttonPrimary {
+        border-width: 0px;
+        color: #fff;
+        background-color: #fa6400;
+        background-color: rgb(250 100 0 / var(--tw-bg-opacity));
+      }
+      .scispace-plugin-alertdialog button.buttonClose {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: inline-flex;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.375rem;
+        background: #e4e6e8;
+        border: none !important;
+        padding: 0 !important;
+      }
+      .scispace-plugin-alertdialog button.gap-6 {
+        gap: 24px;
+      }
+      .scispace-plugin-alertdialog button.font-neutral-600 {
+        color: #58666c !important;
+        font-size: 16px !important;
+      }
+      @media print {
+        #scispace-extension-root {
+          visibility: hidden;
+        }
+        .scispace-plugin-maximized {
+          width: initial !important;
+        }
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .detaild_insights_with_copilot_cta {
+        padding: 2px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: max-content;
+        cursor: pointer;
+        margin: 0px !important;
+      }
+      .detaild_insights_with_copilot_cta svg {
+        width: 13px;
+        height: 13px;
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta svg:hover {
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta p {
+        margin: 0px !important;
+        margin-right: 4px !important;
+        color: #fa6400;
+        font-size: 14px;
+      }
+      .detaild_insights_with_copilot_cta:hover,
+      .detaild_insights_with_copilot_cta:focus,
+      .detaild_insights_with_copilot_cta:active {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+      .detaild_insights_with_copilot {
+        max-width: 720px;
+        padding: 12px;
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: max-content;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .detaild_insights_with_copilot p {
+        margin: 0px !important;
+        margin-right: 10px !important;
+        font-size: 15px !important;
+        max-width: 420px;
+        text-align: left;
+      }
+      @media screen and (max-width: 768px) {
+        .detaild_insights_with_copilot {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+    </style>
+    <style>
+      .search_with_copilot {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        padding: 6px 8px;
+        cursor: pointer;
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .search_with_copilot:hover {
+        color: #fa6400;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+      }
+      .search_with_copilot > svg {
+        width: 21px;
+        height: 21px;
+        color: #fa6400;
+      }
+      .search_with_copilot_wrapper {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .read_with_copilot {
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        padding: 2px 12px;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        height: max-content;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .read_with_copilot:hover,
+      .read_with_copilot:active,
+      .read_with_copilot:focus {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+    </style>
+    <style>
+      .scispace-widget.scispace-extension-widget {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .scispace-search.scispace-extension-search {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .scispace_google_scholar_search {
+        position: absolute;
+        right: 38px;
+        top: 0.8px;
+        background-color: #fff;
+      }
+      .scispace_science_direct_search_page {
+        position: absolute;
+        right: 44px;
+        top: 23px;
+      }
+      .scispace-detailed-insights {
+        width: auto;
+        height: max-content;
+        display: flex;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1119.0" data-gr-ext-installed="">
+    <div style="margin: 0px auto; width: 1050px; position: relative">
+      <div id="framecontentTop">
+        <a href="http://ieee-cybermatics.org/2023"
+          ><img border="0" src="images/banner.jpg" width="1100" height="228"
+        /></a>
+      </div>
 
-<DIV style="MARGIN: 0px auto; WIDTH: 1050px; POSITION: relative">
-<DIV id=framecontentTop>
-<a href='http:https://ieee-cybermatics.org/2023'><img border="0" src="images/banner.jpg" width="1100" height="228"></img></a> 
-        
-</DIV>
+      <script language="JavaScript">
+        var currentMenuItem = "";
+      </script>
 
-<SCRIPT language=JavaScript>
-var currentMenuItem = "";
+      <div
+        id="framecontentRight"
+        style="position: absolute; left: 845px; top: 212px; height: auto"
+      >
+        <div class="innertube2">
+          <br />
 
-</SCRIPT>
-
-</HEAD>
-
-<BODY>
-
-<DIV id=framecontentRight style="position: absolute; left: 845px; top: 212px; height: auto;">
-<DIV class=innertube2>
-
-<br>
-
-			<div align="center">
-	        <table border="0" width = "100%" style="margin-top: -8px; margin-bottom: -60px">
-	
-
-			<br>
-				<li class='menu'>
-                <a href='https://ieee-blockchain.github.io/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Home</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-                <a href='cfp.html'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Call for Papers</b></font>
-				</div>
-				</a>
-				</li>
-                 <li class='menu'>
-                <a href='oc.html'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Organizing Committee</b></font>
-				</div>
-				</a>
-				</li>
-
-				<li class='menu'>
-                 <a href='si.html'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Speical Issues</b></font>
-				</div>
-				</a>
-				</li>
-
-				<li class='menu'>
-                <a href='keynotes.html'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Congress Keynotes</b></font>
-				</div>
-				</a>
-				</li>
-
-				<li class='menu'>
-                 <a href='remind.html'>
+          <div align="center">
+            <br />
+            <li class="menu">
+              <a href="index.html">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"><b>Home</b></font>
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="cfp.html">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Call for Papers</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="oc.html">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Organizing Committee</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="si.html">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Speical Issues</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="keynotes.html">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Congress Keynotes</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="remind.html">
                 <!--<a href='https://link.webropolsurveys.com/EventParticipation/EventPublic/4c716271-86e4-4d55-93fa-75d4f21c60c7?displayId=Fin2577425' target='_blank'>-->
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Registrations</b></font>
-				</div>
-				</a>
-				</li>
-
-				<li class='menu'>
-                <a href='remind.html'>
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Registrations</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="remind.html">
                 <!--<a href='Program-Cybermatics2022-final.pdf' target="_blank">-->
-				<div class='div-text'>
-                <font size="3" face="Times New Roma" color="#FF0000"><b>Program Booklet</b></font>
-				</div>
-				</a>
+                <div class="div-text">
+                  <font size="3" face="Times New Roma" color="#FF0000"
+                    ><b>Program Booklet</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="remind.html">
+                <!--<a href='Venue_Hotels.html'>-->
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Venue &amp; Hotels</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="remind.html">
+                <!--<a href='Visa_Travel.html'>-->
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Visa &amp; Travel</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/blockchain/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Blockchain-2023</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/smartdata/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>SmartData-2023</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/cpscom/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"><b>CPSCom-2023</b></font>
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/ithings/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>Ithings-2023</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/greencom/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"
+                    ><b>GreenCom-2023</b></font
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="https://www.cbd-conference.net/2023/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"><b>CBD-2023</b></font>
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/icpads/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"><b>ICPADS-2023</b></font>
+                </div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="http://ieee-cybermatics.org/2023/icess/">
+                <div class="div-text">
+                  <font size="3" face="Times New Roma"><b>ICESS-2023</b></font>
+                </div>
+              </a>
+            </li>
+            <table
+              border="0"
+              width="100%"
+              style="margin-top: -8px; margin-bottom: -60px"
+            ></table>
+          </div>
 
-				<li class='menu'>
-                                <a href='remind.html'>
-<!--<a href='Venue_Hotels.html'>-->
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Venue & Hotels</b></font>
-				</div>
-				</a>
-				</li>
+          <br /><br /><br />
+          <br /><br />
 
-				<li class='menu'>
-				                <a href='remind.html'>
-<!--<a href='Visa_Travel.html'>-->
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Visa & Travel</b></font>
-				</div>
-				</a>
-				</li>
+          <div align="center">
+            <table border="0" width="148%" style="margin-top: -4px">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                    colspan="2"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Times New Roma" color="#FFFFFF"
+                        ><b>Sponsors</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th height="105" scope="row">
+                    <img
+                      src="images/sponsorship/1.jpg"
+                      width="120"
+                      height="80"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th height="105" scope="row">
+                    <img
+                      src="images/sponsorship/2.jpg"
+                      width="118"
+                      height="45"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th height="105" scope="row">
+                    <img
+                      src="images/sponsorship/3.jpg"
+                      width="115"
+                      height="63"
+                    />
+                  </th>
+                </tr>
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/blockchain/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Blockchain-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/smartdata/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>SmartData-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/cpscom/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>CPSCom-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/ithings/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>Ithings-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/greencom/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>GreenCom-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='https://www.cbd-conference.net/2023/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>CBD-2023</b></font>
-				</div>
-				</a>
-				</li>
-				<li class='menu'>
-				<a href='http:https://ieee-cybermatics.org/2023/icpads/'>
-				<div class='div-text'>
-				<font size="3" face="Times New Roma"><b>ICPADS-2023</b></font>
-				</div>
-				</a>
-				</li>
-				</td>
-			</tr> 
-	        </table>
-		</div>
-     
-    <br><br><br>
-	<br><br>
+      <div
+        id="maincontent"
+        style="
+          width: 850px;
+          position: absolute;
+          left: -7px;
+          top: 223px;
+          height: auto;
+        "
+      >
+        <div class="innertube">
+          <script language="JavaScript">
+            currentMenuItem = "home";
+            preLoadImages(); // set the color for previous selected menu
+          </script>
+          <!-- all main content go here -->
 
-	<div align="center">
-	        <table border="0" width = "148%" style="margin-top: -4px">
-	        <tr> 
-	            <td bgcolor="#0099D0" style="border-style: none; border-width: medium" colspan="2"> 
-	              <p align="center" style="margin-top: 5px; margin-bottom: 5px"><font size = "4" face="Times New Roma" color="#FFFFFF"><b>Sponsors</b></font></td>
-	          </tr>
-	        <tr> 
-	          <th height="105" scope="row"><img src="images/sponsorship/1.jpg" width="120" height="80" /></th>
-	        </tr>
-	        <tr> 
-	          <th height="105" scope="row"><img src="images/sponsorship/2.jpg" width="118" height="45" /></th>
-	        </tr>
-	        <tr> 
-	          <th height="105" scope="row"><img src="images/sponsorship/3.jpg" width="115" height="63" /></th>
-	        </tr>
-	        <tr> 
-	        <!--  <th height="105" scope="row"><img src="images/sponsorship/4.jpg" width="140" height="67" /></th>
-	        </tr>
-	        <tr>
-<th height="105" scope="row"><img src="images/sponsorship/SWTC2.png" width="130" height="60" /></th>
-</tr>
-<tr>
-<th height="105" scope="row"><img src="images/sponsorship/hitc.jpg" width="130" height="67" /></th>
-</tr>-->
-<tr>
-<th height="105" scope="row"><img src="images/sponsorship/cpss.png" width="130" height="55" /></th>
-		</tr>
-	     <!--   <tr> 
-	          <th height="105" scope="row"><img src="images/sponsorship/5.jpg" width="130" height="55" /></th>
-	        </tr>
-	        <tr> 
-	          <th height="105" scope="row"><img src="images/sponsorship/6.jpg" width="125" height="90" /></th>
-	        </tr>
-			<tr> 
-			<th height="105" scope="row"><img src="images/sponsorship/7.jpg" width="130" height="75" /></th>
-			</tr>-->
+          <div align="center">
+            <table border="0" width="100%">
+              <tbody>
+                <tr>
+                  <td
+                    width="1000"
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" color="#FFFFFF" face="Times New Roma"
+                        ><b>IEEE Cybermetics 2023 Special Issues</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    width="1000"
+                    style="border-style: none; border-width: medium"
+                  >
+                    <p
+                      align="left"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <font color="#000000" face="Arial">
+                        1.
+                        <a
+                          href="https://www.keaipublishing.com/en/journals/digital-communications-and-networks/call-for-papers/special-issue-on-intelligent-blockchain/"
+                          target="_bklank"
+                          >Digital Communications and Networks SI on Intelligent
+                          Blockchain</a
+                        >
+                        <br />
+                        <br />
+                        2.
+                        <a
+                          href="https://www.mdpi.com/journal/sensors/special_issues/7I3O0TZ27W"
+                          target="_blank"
+                          >Sensors SI on Security and Privacy in Wireless
+                          Communication and Internet of Things</a
+                        >
+                        <br />
+                        <br />
+                        3.
+                        <a
+                          href="https://www.techscience.com/CMES/special_detail/digital-world"
+                          target="_bklank"
+                          >Computer Modeling in Engineering &amp; Sciences SI on
+                          Information Security and Trust Issues in the Digital
+                          World
+                        </a>
+                        <br />
+                        <br />
+                        4.
+                        <a
+                          href="https://ctsoc.ieee.org/images/TCE_FILES/Approved_CFP/April_2023/TCE_SS_CFP_Smart_Data_Driven_Modeling_for_Emerging_Customer_Applications_in_Mobile_Edge_Computing.pdf"
+                          target="_bklank"
+                          >IEEE Transactions on Consumer Electronics SI on Smart
+                          Data Driven Modeling for Emerging Customer
+                          Applications in Mobile Edge Computing
+                        </a>
+                        <br />
+                        <br />
+                        5.
+                        <a
+                          href="https://www.sciencedirect.com/journal/computer-communications/about/call-for-papers"
+                          target="_bklank"
+                          >Computer Communications SI on Artificial Intelligence
+                          Meeting Green Edge-Cloud Computing
+                        </a>
+                        <br />
+                        <br />
+                        6. IEEE Network <br />
+                        <!--&ensp;&ensp;<a href='https://jwcn-eurasipjournals.springeropen.com/human-centered-computing " target='_blank'>https://jwcn-eurasipjournals.springeropen.com/human-centered-computing</a> <br>-->
+                        <br />
+                        7. Information Sciences <br />
+                        <!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>-->
+                        <br />
+                        8. Information Fusion <br />
+                        <!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>-->
+                        <br />
+                        9. ACM Distributed Ledger Technologies: Research and
+                        Practice <br />
+                        <!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>-->
+                        <br />
 
-	        </table>
-		</div>
+                        <br />
+                        <br />
+                        <right
+                          ><em>More high-quality SIs coming soon</em></right
+                        >
+                      </font>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-</DIV></DIV>
+          <div align="center">
+            <font color="#000000" face="Arial">
+              <u
+                ><em
+                  ><a href="http://cse.stfx.ca/~cybermatics//2019">back</a></em
+                ></u
+              >
+            </font>
+            <table border="0" width="100%">
+              <tbody>
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+          <div align="center">
+            <p align="center">
+              <!--	<th height="190" scope="row"><img src="images/Espoo.jpg" width="550" height="280.5" /></th>-->
+            </p>
 
-
-<div id="maincontent" style="WIDTH:850px; position:absolute; left:-7px; top:223px; height: auto;">
-<div class="innertube">
-<script language="JavaScript">
-currentMenuItem = "home";
-preLoadImages();    // set the color for previous selected menu
-</script>
-<!-- all main content go here -->
-
-
-
-<div align="center">
-<table border="0" width="100%">
-<tbody><tr>
-<td width="1000" bgcolor="#0099D0" style="border-style: none; border-width: medium">
-<p align="center" style="margin-top: 5px; margin-bottom: 5px"><font size="4" color="#FFFFFF" face="Times New Roma"><b>IEEE Cybermetics 2023 Special Issues</b></font></p></td>
-</tr>
-<tr>
-<td width="1000" style="border-style: none; border-width: medium">
-<p align="left" style="margin-top: 10px; margin-bottom: 10px">
-<font color="#000000" face="Arial">
-
-1. <a href="https://www.keaipublishing.com/en/journals/digital-communications-and-networks/call-for-papers/special-issue-on-intelligent-blockchain/" target="_bklank">Digital Communications and Networks SI on Intelligent Blockchain</a> <br>
-<br>
-2. <a href="https://www.mdpi.com/journal/sensors/special_issues/7I3O0TZ27W" target="_blank">Sensors SI on Security and Privacy in Wireless Communication and Internet of Things</a> <br>
-<br>
-3. <a href="https://www.techscience.com/CMES/special_detail/digital-world" target="_bklank">Computer Modeling in Engineering &amp; Sciences SI on Information Security and Trust Issues in the Digital World </a> <br>
-<br>
-4. <a href="https://ctsoc.ieee.org/images/TCE_FILES/Approved_CFP/April_2023/TCE_SS_CFP_Smart_Data_Driven_Modeling_for_Emerging_Customer_Applications_in_Mobile_Edge_Computing.pdf" target="_bklank">IEEE Transactions on Consumer Electronics SI on Smart Data Driven Modeling for Emerging Customer Applications in Mobile Edge Computing </a> <br>
-<br>
-5. <a href="https://www.sciencedirect.com/journal/computer-communications/about/call-for-papers" target="_bklank">Computer Communications SI on Artificial Intelligence Meeting Green Edge-Cloud Computing </a> <br>
-<br>
-6.  IEEE Network <br>
-<!--&ensp;&ensp;<a href='https://jwcn-eurasipjournals.springeropen.com/human-centered-computing " target='_blank'>https://jwcn-eurasipjournals.springeropen.com/human-centered-computing</a> <br>-->
-<br>
-7.  Information Sciences   <br>
-<!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>--> <br>
-8.  Information Fusion <br>
-<!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>--> <br>
-9.  ACM Distributed Ledger Technologies: Research and Practice  <br>
-<!--&ensp;&ensp;<a href="https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬" target="_blank">https://www.hindawi.com/journals/scn/si/489130/cfp/ ‬</a>--> <br>
-
-<br>
-<br>
-<right><em>More high-quality SIs coming soon</em></right>
-
-</font></p>
-        </td></tr>
-    </tbody></table>
-</div>
-
-<div align="center">
-    <font color="#000000" face="Arial">
-        <u><em><a href="http://cse.stfx.ca/~cybermatics//2019">back</a></em></u>
-    </font><table border="0" width="100%">
-    <tbody><tr>
-    </tr>
-    </tbody></table>
-</div>
-<div align="center">
-<p align="center">
-	 
-	<!--	<th height="190" scope="row"><img src="images/Espoo.jpg" width="550" height="280.5" /></th>-->
-	
-
-</p>
-
-<br>
-<p align="center"><font size="-1" face="Arial">
-<b>Organizations</b>:<br><br>
-</font></p><font size="-1" face="Arial">
-<table width="100%">
-	<tbody><tr valign="middle">
-	  <th height="105" scope="row"><img src="images/StFX-LOGO.png" width="140" height="140"></th>
-      <th height="105" scope="row"><img src="images/hn.jpg" width="140" height="140"></th>
-</tr>
-</tbody></table>
-<br>
-<font size="-1">Copyright@ Cybermatics 2023. Created and Maintained by Cybermatics 2023 Web Team.</font>
-
-                            		
-                            																
-
-</font></div><font size="-1" face="Arial">
-
-</font></div><font size="-1" face="Arial">
-
-</font>
-</div>
-</BODY>
-</HTML>
+            <br />
+            <p align="center">
+              <font size="-1" face="Arial">
+                <b>Organizations</b>:<br /><br />
+              </font>
+            </p>
+            <font size="-1" face="Arial">
+              <table width="100%">
+                <tbody>
+                  <tr valign="middle">
+                    <th height="105" scope="row">
+                      <img
+                        src="images/StFX-LOGO.png"
+                        width="140"
+                        height="140"
+                      />
+                    </th>
+                    <th height="105" scope="row">
+                      <img src="images/hn.jpg" width="140" height="140" />
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <br />
+              <font size="-1"
+                >Copyright@ Cybermatics 2023. Created and Maintained by
+                Cybermatics 2023 Web Team.</font
+              >
+            </font>
+          </div>
+          <font size="-1" face="Arial"> </font>
+        </div>
+        <font size="-1" face="Arial"> </font>
+      </div>
+    </div>
+  </body>
+  <scispace-div id="scispace-extension-root"></scispace-div
+  ><grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>

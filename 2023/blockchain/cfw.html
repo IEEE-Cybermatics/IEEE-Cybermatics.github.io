@@ -1,457 +1,1092 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 
-<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<HEAD>
-<TITLE>Blockchain-2023 | Call for Workshops </TITLE>
-<META http-equiv=Content-Type content="text/html; charset=utf-8">
-<LINK href="styles.css" type=text/css rel=stylesheet>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Blockchain-2023 | Call for Workshops</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
 
-<link rel="shortcut icon" href="images/atc.ico" />
-<DIV style="MARGIN: 0px auto; WIDTH: 1050px; POSITION: relative">
-<DIV id=framecontentTop>
-        <img border="0" src="images/banner.jpg" width="1100" height="229"></img>
-</DIV>
+    <link rel="shortcut icon" href="images/atc.ico" />
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      @keyframes scispace-copilot-fade-in {
+        0% {
+          visibility: hidden;
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .scispace-plugin-maximized {
+        width: calc(100% - 420px) !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        background-color: #fff;
+        position: absolute;
+        z-index: 2147483655;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] div {
+        font-family: inherit !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        div
+        .scispace-plugin-highlight-cta-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-hightlight-tooltip {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in {
+        opacity: 0;
+        animation: scispace-copilot-fade-in 130ms ease-in-out 50ms forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in.hide {
+        opacity: 0;
+        animation: fade-out 100ms ease-in-out forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-divider {
+        margin: 8px 0px;
+        flex-shrink: 0;
+        border-width: 0px thin 0px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        align-self: stretch;
+        background: #fff;
+        opacity: 0.6;
+        width: 1px !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu
+        > button {
+        height: 100%;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:hover
+        .scispace-highlight-menu {
+        border-radius: 6px;
+        display: block;
+        position: absolute;
+        top: 36px;
+        background-color: #fff;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:visited
+        .scispace-highlight-menu {
+        display: block;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu {
+        width: max-content;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+        display: none;
+        padding: 10px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > button {
+        white-space: nowrap;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        svg {
+        width: 20px;
+        height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > p {
+        color: #252f35;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        margin-bottom: 8px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] button {
+        font-family: inherit !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        margin: 0 !important;
+        cursor: pointer;
+        outline: none;
+        color: #252f35 !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        background-color: #fff !important;
+        border: none;
+        border-radius: 6px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-transform: none !important;
+        height: max-content !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:hover {
+        background-color: #f2f3f3 !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:disabled {
+        opacity: 0.4 !important;
+        color: #252f35 !important;
+      }
+      .scispace-plugin-alert-overlay {
+        --tw-bg-opacity: 1;
+        background-color: #12181a;
+        background-color: rgb(18 24 26 / var(--tw-bg-opacity));
+        opacity: 0.5;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: fixed;
+        z-index: 2147483650;
+      }
+      .scispace-plugin-alertdialog {
+        width: 384px;
+        position: fixed;
+        top: calc(50% - 100px);
+        left: calc(50% - 192px);
+        padding: 24px;
+        border-radius: 0.375rem;
+        --tw-bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        z-index: 2147483651;
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+          var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .scispace-plugin-alertdialog .scispace-plugin-alertdialog-cta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+      .scispace-plugin-alertdialog h2,
+      .scispace-plugin-alertdialog p {
+        margin: 0 !important;
+      }
+      .scispace-plugin-alertdialog p {
+        margin-top: 12px !important;
+      }
+      .scispace-plugin-alertdialog h2 > span,
+      .scispace-plugin-alertdialog p > span {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        text-decoration-line: none;
+        line-height: 28px;
+        --tw-text-opacity: 1;
+        color: #47555a;
+        color: rgb(71 85 90 / var(--tw-text-opacity));
+      }
+      .scispace-plugin-alertdialog h2 > span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .scispace-plugin-alertdialog p > span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .scispace-plugin-alertdialog button {
+        font-family: inherit !important;
+        flex-direction: row;
+        outline: none;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 8px;
+        --tw-bg-opacity: 1;
+        border-radius: 0.375rem;
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 80px;
+        height: 36px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #47555a;
+        border: 0.8px solid #c6c8ca !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .scispace-plugin-alertdialog button:disabled {
+        opacity: 0.4 !important;
+      }
+      .scispace-plugin-alertdialog button.buttonPrimary {
+        border-width: 0px;
+        color: #fff;
+        background-color: #fa6400;
+        background-color: rgb(250 100 0 / var(--tw-bg-opacity));
+      }
+      .scispace-plugin-alertdialog button.buttonClose {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: inline-flex;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.375rem;
+        background: #e4e6e8;
+        border: none !important;
+        padding: 0 !important;
+      }
+      .scispace-plugin-alertdialog button.gap-6 {
+        gap: 24px;
+      }
+      .scispace-plugin-alertdialog button.font-neutral-600 {
+        color: #58666c !important;
+        font-size: 16px !important;
+      }
+      @media print {
+        #scispace-extension-root {
+          visibility: hidden;
+        }
+        .scispace-plugin-maximized {
+          width: initial !important;
+        }
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .detaild_insights_with_copilot_cta {
+        padding: 2px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: max-content;
+        cursor: pointer;
+        margin: 0px !important;
+      }
+      .detaild_insights_with_copilot_cta svg {
+        width: 13px;
+        height: 13px;
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta svg:hover {
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta p {
+        margin: 0px !important;
+        margin-right: 4px !important;
+        color: #fa6400;
+        font-size: 14px;
+      }
+      .detaild_insights_with_copilot_cta:hover,
+      .detaild_insights_with_copilot_cta:focus,
+      .detaild_insights_with_copilot_cta:active {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+      .detaild_insights_with_copilot {
+        max-width: 720px;
+        padding: 12px;
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: max-content;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .detaild_insights_with_copilot p {
+        margin: 0px !important;
+        margin-right: 10px !important;
+        font-size: 15px !important;
+        max-width: 420px;
+        text-align: left;
+      }
+      @media screen and (max-width: 768px) {
+        .detaild_insights_with_copilot {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+    </style>
+    <style>
+      .search_with_copilot {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        padding: 6px 8px;
+        cursor: pointer;
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .search_with_copilot:hover {
+        color: #fa6400;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+      }
+      .search_with_copilot > svg {
+        width: 21px;
+        height: 21px;
+        color: #fa6400;
+      }
+      .search_with_copilot_wrapper {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .read_with_copilot {
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        padding: 2px 12px;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        height: max-content;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .read_with_copilot:hover,
+      .read_with_copilot:active,
+      .read_with_copilot:focus {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+    </style>
+    <style>
+      .scispace-widget.scispace-extension-widget {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .scispace-search.scispace-extension-search {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .scispace_google_scholar_search {
+        position: absolute;
+        right: 38px;
+        top: 0.8px;
+        background-color: #fff;
+      }
+      .scispace_science_direct_search_page {
+        position: absolute;
+        right: 44px;
+        top: 23px;
+      }
+      .scispace-detailed-insights {
+        width: auto;
+        height: max-content;
+        display: flex;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1119.0" data-gr-ext-installed="">
+    <div style="margin: 0px auto; width: 1050px; position: relative">
+      <div id="framecontentTop">
+        <img border="0" src="images/banner.jpg" width="1100" height="229" />
+      </div>
 
-<SCRIPT language=JavaScript>
-var currentMenuItem = "";
+      <script language="JavaScript">
+        var currentMenuItem = "";
+      </script>
 
-</SCRIPT>
+      <div
+        id="framecontentLeft"
+        style="position: absolute; left: -5px; top: 225px; height: auto"
+      >
+        <div class="innertube2">
+          <li class="menu">
+            <a href="index.html">
+              <div class="div-text">
+                <font size="3"><b>Home</b></font>
+              </div>
+            </a>
+          </li>
 
-</HEAD>
+          <li class="menu">
+            <a href="cfp.html">
+              <div class="div-text">
+                <font size="3"><b>Call for Papers</b></font>
+              </div>
+            </a>
+          </li>
 
-<BODY>
+          <li class="menu">
+            <a href="cfw.html">
+              <div class="div-text">
+                <font size="3"><b>Call for Workshops</b></font>
+              </div>
+            </a>
+          </li>
 
-<DIV id=framecontentLeft style="position: absolute; left: -5px; top: 225px; height: auto;">
-<DIV class=innertube2>
+          <li class="menu">
+            <a href="oc.html">
+              <div class="div-text">
+                <font size="3"><b>Organizing Committee</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/'>
-<div class='div-text'>
-<font size="3"><b>Home</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="tpc.html">
+              <div class="div-text">
+                <font size="3"><b>Program Committee</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'cfp.html'>
-<div class='div-text'>
-<font size="3"><b>Call for Papers</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="keynotes.html">
+              <div class="div-text">
+                <font size="3"><b>Congress Keynotes</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'cfw.html'>
-<div class='div-text'>
-<font size= "3"><b>Call for Workshops</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="workshops.html">
+              <div class="div-text">
+                <font size="3"><b>Workshops and Symposia</b></font>
+              </div>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="tba.html">
+              <div class="div-text">
+                <font size="3"><b>Symposium</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'oc.html'>
-<div class='div-text'>
-<font size="3"><b>Organizing Committee</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="https://ieee-cybermatics.github.io/si.html">
+              <!--<a href= 'si.html'>-->
+              <div class="div-text">
+                <font size="3"><b>Special Issues</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'tpc.html'>
-<div class='div-text'>
-<font size="3"><b>Program Committee</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Program-Cybermatics2022-final.pdf' target="_blank">-->
+              <div class="div-text">
+                <font size="3" color="#FF0000"><b>Program Booklet</b></font>
+              </div>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="ps.html">
+              <div class="div-text">
+                <font size="3"><b>Paper Submission</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='https://ieee-cybermatics.github.io/keynotes'>
-<div class='div-text'>
-<font size= "3"><b>Congress Keynotes</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='accepted_paper.pdf' target='_blank'>-->
+              <div class="div-text">
+                <font size="3" color="#FFDA33"><b>Accepted Paper List</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'workshops.html'>
-<div class='div-text'>
-<font size= "3"><b>Workshops and Symposia</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='https://ieeecps.org/#!/auth/login?ak=1&pid=4X47uCZErxrngFwaKdRXtL' target='_blank'>-->
+              <div class="div-text">
+                <font size="3" color="#FFDA33"
+                  ><b>Final Paper Instruction</b></font
+                >
+              </div>
+            </a>
+          </li>
 
-<!--<li class='menu'>
-<a href= 'ss.html'>
-<div class='div-text'>
-<font size= "3"><b>Special Sessions</b></font>
-</div>
-</a>
-</li>-->
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href= 'https://link.webropolsurveys.com/EventParticipation/EventPublic/4c716271-86e4-4d55-93fa-75d4f21c60c7?displayId=Fin2577425' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Registration</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'tba.html'>
-<div class='div-text'>
-<font size= "3"><b>Symposium</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Venue_Hotels.html' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Venue &amp; Hotels</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='https://ieee-cybermatics.github.io/si.html'>
-<!--<a href= 'si.html'>-->
-<div class='div-text'>
-<font size= "3"><b>Special Issues</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Visa_Travel.html' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Visa &amp; Travel</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href='Program-Cybermatics2022-final.pdf' target="_blank">-->
-<div class='div-text'>
-<font size="3" color="#FF0000"><b>Program Booklet</b></font>
-</div>
-</a>
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/ithings/"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>iThings 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href= 'ps.html'>
-<div class='div-text'>
-<font size="3"><b>Paper Submission</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/cpscom" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>CPSCom 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href='accepted_paper.pdf' target='_blank'>-->
-<div class='div-text'>
-<font size="3" color='#FFDA33'><b>Accepted Paper List</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/greencom"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>GreenCom 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href='https://ieeecps.org/#!/auth/login?ak=1&pid=4X47uCZErxrngFwaKdRXtL' target='_blank'>-->
-<div class='div-text'>
-<font size="3" color='#FFDA33'><b>Final Paper Instruction</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/smartdata"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>SmartData 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href= 'https://link.webropolsurveys.com/EventParticipation/EventPublic/4c716271-86e4-4d55-93fa-75d4f21c60c7?displayId=Fin2577425' target='_blank'>-->
-<div class='div-text'>
-<font size="3"><b>Registration</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="https://www.cbd-conference.net/2023/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>CBD 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href='Venue_Hotels.html' target='_blank'>-->
-<div class='div-text'>
-<font size="3"><b>Venue & Hotels</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/icpads/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>ICPADS 2023</b></font>
+              </div>
+            </a>
+          </li>
 
-<li class='menu'>
-<a href='remind.html'>
-<!--<a href='Visa_Travel.html' target='_blank'>-->
-<div class='div-text'>
-<font size="3"><b>Visa & Travel</b></font>
-</div>
-</a>
-</li>
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/icess/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>ICESS 2023</b></font>
+              </div>
+            </a>
+          </li>
+        </div>
+      </div>
 
+      <div
+        id="framecontentRight"
+        style="position: absolute; left: 860px; top: 212px; height: auto"
+      >
+        <div class="innertube2">
+          <div align="center">
+            <p></p>
+            <p></p>
+            <table border="0" width="140%">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Arial" color="#FFFFFF"
+                        ><b>Important Dates</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="background-style"
+                    style="
+                      padding-right: 10px;
+                      padding-left: 10px;
+                      padding-bottom: 10px;
+                      padding-top: 10px;
+                    "
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000">
+                        July 15, 2023</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Workshop Proposal Due</b></font
+                      >
+                    </p>
+                    <hr size="1" noshade="" color="#00ccff" />
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/2023/ithings' target="_blank">
-<div class='div-text'>
-<font size="3"><b>iThings 2023</b></font>
-</div>
-</a>
-</li>
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        >September 01, 2023</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Paper Submission Deadline</b></font
+                      >
+                    </p>
+                    <hr size="1" noshade="" color="#00ccff" />
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/2023/cpscom' target="_blank">
-<div class='div-text'>
-<font size="3"><b>CPSCom 2023</b></font>
-</div>
-</a>
-</li>
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        >October 15, 2023</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Author Notification</b></font
+                      >
+                    </p>
+                    <hr size="1" noshade="" color="#00ccff" />
 
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        >October 31, 2023</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Camera-ready and Registration</b></font
+                      >
+                    </p>
+                    <hr size="1" noshade="" color="#00ccff" />
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/2023/greencom' target="_blank">
-<div class='div-text'>
-<font size="3"><b>GreenCom 2023</b></font>
-</div>
-</a>
-</li>
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        >Coming soon</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Registration Deadline</b></font
+                      >
+                    </p>
+                    <hr size="1" noshade="" color="#00ccff" />
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/2023/smartdata' target="_blank">
-<div class='div-text'>
-<font size="3"><b>SmartData 2023</b></font>
-</div>
-</a>
-</li>
+                    <p
+                      align="center"
+                      style="margin-top: 10px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        >December 17-21, 2023</font
+                      >
+                    </p>
+                    <p
+                      align="center"
+                      style="margin-top: 0px; margin-bottom: 0px"
+                    >
+                      <font size="3" face="Arial" color="#000000"
+                        ><b>Conference Date</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br />
+          <!-- Sponsor's Logo -->
+          <div align="center">
+            <table border="0" width="140%">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                    colspan="2"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Arial" color="#FFFFFF"
+                        ><b>Sponsors</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/1.jpg" width="120" height="80" />
+                  </th>
+                </tr>
 
-<li class='menu'>
-<a href= 'https://www.cbd-conference.net/2023/' target="_blank">
-<div class='div-text'>
-<font size="3"><b>CBD 2023</b></font>
-</div>
-</a>
-</li>
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/2.jpg" width="118" height="45" />
+                  </th>
+                </tr>
 
-<li class='menu'>
-<a href= 'https://ieee-cybermatics.github.io/2023/icpads' target="_blank">
-<div class='div-text'>
-<font size="3"><b>ICPADS 2023</b></font>
-</div>
-</a>
-</li>
-</DIV></DIV>
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/3.jpg" width="115" height="63" />
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
-<DIV id=framecontentRight style="position: absolute; left: 860px; top: 212px; height: auto;">
-<DIV class=innertube2>
+      <div
+        id="maincontent"
+        style="
+          width: 660px;
+          position: absolute;
+          left: 200px;
+          top: 223px;
+          height: auto;
+        "
+      >
+        <div class="innertube">
+          <script language="JavaScript">
+            currentMenuItem = "home";
+            preLoadImages(); // set the color for previous selected menu
+          </script>
 
- <div align="center">
-<p>
-  <table border="0" width="140%">
-			<tr> 
-				<td bgcolor="#0099D0" style="border-style: none; border-width: medium"> 
-				
-					<p align="center" style="margin-top:5px; margin-bottom: 5px"><font size = "4" face="Arial" color="#FFFFFF"><b>Important Dates</b></font></p>
-							</td>
-			<tr>
-				<td class=background-style style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px">
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"> July 15, 2023</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Workshop Proposal Due</b></font></p>
-<hr size="1" noshade color="#00ccff" />
+          <!-- the context -->
 
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">September 01, 2023</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Paper Submission Deadline</b></font></p>
-<hr size="1" noshade color="#00ccff" />
-						
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">October 15, 2023</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Author Notification</b></font></p>
-<hr size="1" noshade color="#00ccff" />
+          <div align="center">
+            <table border="0" width="100%" id="table11" bordercolor="#BEC8EC">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Arial" color="#FFFFFF"
+                        ><b>Call for Workshops</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="background-style"
+                    style="
+                      padding-right: 10px;
+                      padding-left: 10px;
+                      padding-bottom: 10px;
+                      padding-top: 10px;
+                    "
+                  >
+                    <p
+                      align="justify"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <font color="#000000" face="Arial">
+                        <!--<b>Title:</b><br>-->
+                        The IEEE Blockchain 2023 workshops and symposia provide
+                        vibrant opportunities for academic researchers and
+                        industry practitioners to share their research
+                        experiences, original research achievements and
+                        practical development products on specific new
+                        challenges and emerging issues related to Blockchain.
+                        The themes of the IEEE Blockchain 2023 workshops and
+                        symposia should be related to the scopes of the main
+                        conference, reflecting to advances in all aspects of
+                        blockchain.<br />
+                        <br />
+                        <!--<b>Acronym:</b><br>-->
+                        The organizers of the workshops and symposia shall have
+                        responsibility of soliciting call for papers, forming
+                        program committee to review and select papers as well as
+                        planning workshop/symposium program. The registration
+                        fees for workshops and symposia will be determined by
+                        and paid to the main conference other than the workshops
+                        or symposia. The main conference will provide
+                        workshop/symposium facilities including the working
+                        notes printing, meeting rooms, proceedings, etc. <br />
+                        <br />
+                        The papers of the IEEE Blockchain 2023 workshops and
+                        symposia will be published in the proceedings of the
+                        main conference by IEEE CPS (EI Indexed) and collected
+                        by IEEE Xplorer Digital Library.<br />
+                        <br />
+                        Prospective Workshop Organizers should send a proposal
+                        containing the following information to IEEE Blockchain
+                        2023 Workshop Chairs via email by July 15, 2023:<br />
+                        <br />
 
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">October 31, 2023</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Camera-ready and Registration</b></font></p>
-<hr size="1" noshade color="#00ccff" />
+                        ● Title of the workshop/symposium (Full name and
+                        Abbreviation) <br />
+                        <br />
+                        ● Objectives, scope, and contribution to the main
+                        conference (up to 1 page) <br />
+                        <br />
+                        ● Short bio of the key organizers and their experience
+                        on conference/workshop organization<br />
+                        <br />
+                        ● Procedures for selecting papers, plans for advertising
+                        call for papers, and intentions for organizing journal
+                        special issues if possible <br />
+                        <br />
+                        ● The expected number of participants <br />
+                        <br />
+                        ● A tentative list of program committee members<br />
+                        <br />
+                        ● The workshop website URL address if available<br />
+                        <br />
+                        <br />
+                        Approved workshops/symposia should strictly follow the
+                        Important Dates of the main conference, particularly the
+                        Author Notification Date and the Camera-ready Paper Due
+                        Date. The submission deadline could be later than that
+                        of the main conference. But a workshop/symposium should
+                        have sufficient time, say 5-7 weeks, for generating peer
+                        reviews. Generally, each paper should receive 2 or 3
+                        peer reviews.<br />
+                        <br />
+                        In order to encourage the workshop/symposium organizers,
+                        the main conference will also provide the following
+                        benefits to the workshop/session organizers: (1) If a
+                        workshop will have at least 10 full registrations for
+                        accepted papers (excluding those borderline papers
+                        transferred from the main conference), then one of the
+                        main organizers can choose either to waive one of his or
+                        her papers for registrations. (2) If a
+                        workshop/symposium will have at least 20 full
+                        registrations for accepted papers (excluding those
+                        borderline papers transferred from the main conference),
+                        then the main organizers can also invite one keynote
+                        speaker for the workshop and the conference will provide
+                        free registration and travel grant for the keynote
+                        speaker.<br />
+                        <br />
+                        Look forward to your stimulating proposals and
+                        contributions to IEEE Blockchain 2023! <br />
+                        <br />
+                        IEEE Blockchain 2023 Workshop Chairs:<br />
+                        <br />
+                        Workshop and Symposia Co-chairs<br />
+                        <br />
+                        ●   Weizhi Meng <br />
+                        Technical University of Denmark, Denmark (weme@dtu.dk)
+                        <br />
+                        <br />
+                        ●   Xuyang Jing <br />
+                        Xidian University, China (jingxuyang@xidian.edu.cn)<br />
+                        <br />
 
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">Coming soon</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Registration Deadline</b></font></p>
-<hr size="1" noshade color="#00ccff" />
-					
-					<p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">December 17-21, 2023</font></p>
-					<p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Conference Date</b></font></p>
-				</td>
-			</tr>
-</p>			
-			
-  </table>
-</div>
-<br>
-<!-- Sponsor's Logo -->
-<div align="center">
-        <table border="0" width="140%">
-        <tbody><tr> 
-            <td bgcolor="#0099D0" style="border-style: none; border-width: medium" colspan="2"> 
-              <p align="center" style="margin-top: 5px; margin-bottom: 5px"><font size="4" face="Arial" color="#FFFFFF"><b>Sponsors</b></font></p></td>
-          </tr>
-<tr>
-<th height="105" scope="row"><img src="pics/1.jpg" width="120" height="80"></th>
-</tr>
- 
-<tr>
-<th height="105" scope="row"><img src="pics/2.jpg" width="118" height="45"></th>
-</tr>
-  
-<tr>
-<th height="105" scope="row"><img src="pics/3.jpg" width="115" height="63"></th>
-</tr>
-<!--
-<tr>
-<th height="105" scope="row"><img src="pics/cpss.png" width="130" height="55" /></th>
-		</tr>
- <tr>
-<th height="105" scope="row"><img src="pics/bc.png" width="121" height="51" /></th>
-</tr>
+                        <br />
+                      </font>
+                    </p>
+                    <font color="#000000" face="Arial"> </font>
+                    <p></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-<tr>
-<th height="105" scope="row"><img src="pics/tems.jpg" width="140" height="67" /></th><br><br>
-</tr>-->
- <!--
-<tr>
-<th height="105" scope="row"><img src="pics/SWTC2.png" width="130" height="60" /></th>
-</tr>
-<tr>
-<th height="105" scope="row"><img src="pics/hitc.jpg" width="130" height="67" /></th>
-</tr>-->
-        </tbody></table>
-	</div>
+          <div align="center">
+            <p align="center">
+              <font size="-1" face="Arial">
+                <font size="2" face="Arial" color="#FF0000"
+                  ><b
+                    >Back to main congress:
+                    <a href="//ieee-cybermatics.org/2023/"
+                      ><em>Cybermatics 2023</em></a
+                    ></b
+                  ></font
+                ><br /><br /><br />
+              </font>
+            </p>
+            <p align="center" style="margin-top: 5px; margin-bottom: 5px">
+              <font size="-1" face="Arial"
+                ><font size="2" face="Arial"
+                  ><b>Organizations</b>:<br /><br /> </font
+              ></font>
+            </p>
+            <table width="100%">
+              <tbody>
+                <tr valign="middle">
+                  <th height="105" scope="row">
+                    <img src="images/StFX-LOGO.png" width="140" height="140" />
+                  </th>
+                  <th height="105" scope="row">
+                    <img src="images/hn.jpg" width="157.5" height="147.7" />
+                  </th>
 
-</DIV></DIV>
-
-
-<DIV id=maincontent style="WIDTH: 660px; position:absolute; left:200px; top:223px; height: auto;">
-<DIV class=innertube>
-<SCRIPT language=JavaScript>
-currentMenuItem = "home";
-preLoadImages();    // set the color for previous selected menu
-</SCRIPT>
-
-
-<!-- the context -->
-
-<div align="center">
-<table border="0" width="100%" id="table11" bordercolor="#BEC8EC">
-<tr>
-<td bgcolor="#0099D0" style="border-style: none; border-width: medium">
-<p align="center" style="margin-top: 5px; margin-bottom: 5px"><font size = "4" face="Arial" color="#FFFFFF"><b>Call for Workshops</b></font></p>
-</td>
-</tr>
-<tr>
-<td class=background-style style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px">
-
-<p align="justify" style="margin-top: 10px; margin-bottom: 10px">
-<font color="#000000" face="Arial">
-
-<!--<b>Title:</b><br>-->
-The IEEE Blockchain 2023 workshops and symposia provide vibrant opportunities for academic researchers and industry practitioners to share their research experiences, original research achievements and practical development products on specific new challenges and emerging issues related to Blockchain. The themes of the IEEE Blockchain 2023 workshops and symposia should be related to the scopes of the main conference, reflecting to advances in all aspects of blockchain.<br>
-<br>
-<!--<b>Acronym:</b><br>-->
-The organizers of the workshops and symposia shall have responsibility of soliciting call for papers, forming program committee to review and select papers as well as planning workshop/symposium program. The registration fees for workshops and symposia will be determined by and paid to the main conference other than the workshops or symposia. The main conference will provide workshop/symposium facilities including the working notes printing, meeting rooms, proceedings, etc. <br>
-<br>
-The papers of the IEEE Blockchain 2023 workshops and symposia will be published in the proceedings of the main conference by IEEE CPS (EI Indexed) and collected by IEEE Xplorer Digital Library.<br>
-<br>
-Prospective Workshop Organizers should send a proposal containing the following information to IEEE Blockchain 2023 Workshop Chairs via email by July 15, 2023:<br>
-<br>
-
-●    Title of the workshop/symposium (Full name and Abbreviation) <br>
-<br>
-●    Objectives, scope, and contribution to the main conference (up to 1 page) <br>
-<br>
-●    Short bio of the key organizers and their experience on conference/workshop organization<br>
-<br>
-●    Procedures for selecting papers, plans for advertising call for papers, and intentions for organizing journal special issues if possible <br>
-<br>
-●    The expected number of participants <br>
-<br>
-●    A tentative list of program committee members<br>
-<br>
-●    The workshop website URL address if available<br>
-<br>
-<br>
-Approved workshops/symposia should strictly follow the Important Dates of the main conference, particularly the Author Notification Date and the Camera-ready Paper Due Date. The submission deadline could be later than that of the main conference. But a workshop/symposium should have sufficient time, say 5-7 weeks, for generating peer reviews. Generally, each paper should receive 2 or 3 peer reviews.<br>
-<br>
-In order to encourage the workshop/symposium organizers, the main conference will also provide the following benefits to the workshop/session organizers: (1) If a workshop will have at least 10 full registrations for accepted papers (excluding those borderline papers transferred from the main conference), then one of the main organizers can choose either to waive one of his or her papers for registrations. (2) If a workshop/symposium will have at least 20 full registrations for accepted papers (excluding those borderline papers transferred from the main conference), then the main organizers can also invite one keynote speaker for the workshop and the conference will provide free registration and travel grant for the keynote speaker.<br>
-<br>
-Look forward to your stimulating proposals and contributions to IEEE Blockchain 2023! <br>
-<br>
-<!--<b>Part A: Blockchain Technology</b><br>
-<br>
-●  &ensp;&ensp;  Blockchain architecture <br>
-●  &ensp;&ensp;  Blockchain smart contracts <br>
-●  &ensp;&ensp;  Blockchain adoption <br>
-●  &ensp;&ensp;  Blockchain standards <br>
-●  &ensp;&ensp;  Blockchain as a Service (BaaS) <br>
-●  &ensp;&ensp;  Blockchain security <br>
-●  &ensp;&ensp;  Blockchain consensus algorithms <br>
-●  &ensp;&ensp;  Blockchain foundations <br>
-●  &ensp;&ensp;  Blockchain new design <br>
-●  &ensp;&ensp;  Blockchain privacy <br>
-●  &ensp;&ensp;  Blockchain scalability <br>
-●  &ensp;&ensp;  Hyperledger, Ethereum <br>
-●  &ensp;&ensp;  Permission less, Permissioned blockchains <br>
-●  &ensp;&ensp;  Decentralized Application <br>
-●  &ensp;&ensp;  Smart contracts <br>
-<br>
-<b>Part B: Applications of Blockchain</b><br>
-<br>
-Insurance, Payments, Cryptocurrencies, Energy, Knowing Your Customer’ (KYC), Anti-Money Laundering (AML), Trade Finance, Healthcare, Music, Real Estate, Government, Banking, Supply chain, Retail, Consumer Products, Transportation, Automotive, Digital identity management, Cross-border payments, Genomics, precision medicine, Assets management etc.
-Any area which could be benefitted by Blockchain technology.<br>
-<br>
-<b>Important Dates</b><br>
-Paper Submission Deadline: March 15, 2022<br>
-Author Notification: June 10, 2022<br>
-Final Manuscript Due: June 25, 2022<br>
-<br>
-<b>Submissions</b><br>
-All papers need to be submitted electronically through the conference website (TBA) with PDF format. Submitted papers must not substantially overlap with papers that have been published or that are simultaneously submitted to a journal or a conference with proceedings. Papers must be clearly presented in English, must not exceed 6 pages in IEEE Computer Society proceedings format (or up to 8 pages with the pages over length charge), including tables, figures, references and appendices. Papers will be selected based on their originality, significance, relevance, and clarity of presentation assessed by at least three reviewers. All submitted papers will be judged through double-blind reviews, where the identities of the authors are withheld from the reviewers. As an author, you are required to preserve the anonymity of your submission, while at the same time allowing the reader to fully grasp the context of related past work, including your own. Papers that do not conform to our double-blind submission policies will be rejected without review.<br>
-Submission of a paper should be regarded as a commitment that, should the paper be accepted, at least one of the authors will register and attend the conference to present the work. BlockCybersec reserves the right to exclude a paper from distribution after the conference (e.g., removal from the digital library and indexing services), if the paper is not presented at the conference. All accepted papers will be published in IEEE CPS proceedings (EI Indexed) and collected by IEEE Xplore Digital Library.<br>
-<br>-->
-IEEE Blockchain 2023 Workshop Chairs:<br>
-<br>
-Workshop and Symposia Co-chairs<br>
-<br>
-●  &ensp;  Weizhi Meng <br>
-    Technical University of Denmark, Denmark (weme@dtu.dk) <br>
-<br>
-●  &ensp;  Xuyang Jing <br>
-    Xidian University, China (jingxuyang@xidian.edu.cn)<br>
-<br>
-
-
-<br>
-<!--
-<b>Program Committee Members</b><br>
-● &ensp;   Dr. D Ramesh, IIT Dhanbad, India <br>
-● &ensp;   Dr. Sathish P, IIT Roorkee, India <br>
-● &ensp;   Dr. Ajay Kumar, Pennsylvania State University, USA <br>
-● &ensp;   Dr. Shivadarshan, NMIT, India <br>
-● &ensp;   Dr. Pushparaj Shetty. NITK Surathkal, India <br>
-● &ensp;   Dr. Madhu, NIT Calicut, India <br>
-● &ensp;   Dr. Anand Kumar, NITK Surathkal, India <br>
-● &ensp;   Dr. Damodar Reddy Edla, NIT Goa, India <br>
-● &ensp;   Dr.  Druga Prasad Mohapatra, NIT Durgapur, India <br>
-● &ensp;   Dr Vinaykumar R, University of Cincinatti, India <br>
-● &ensp;   Dr. Prafulla K Behera, Utkal University, India <br>
-● &ensp;   Dr. Siba Kumar Udgata, University of Hyderabad, India <br>
-● &ensp;   Dr. Kavita Singh, YCCE Nagpur, India <br>
-● &ensp;   Dr. Kavita Asnani, GEC Goa, India <br>
-● &ensp;   Dr. D. H. Manjaiah, Mangalore University, India <br>
-● &ensp;   Dr. Binod Kumar P, SOA University, India <br>
-● &ensp;   Dr. Manas Ranjan Patra, Berhampur University, India <br>
-● &ensp;   Dr. Manjunath K N, Manipal Academy of Higher Education, India <br>
-● &ensp;   Dr. Sumith N, Manipal Academy of Higher Education, India <br>-->
-
-
-</p>
-</font>
-</p>
-</td>
-</tr>
-</table>
-</div>
-
-
-<div align="center">
-<p align="center"><font size="-1" face="Arial">
-<font size="2" face="Arial" color="#FF0000"><b>Back to main congress: <a href="//ieee-cybermatics.org/2023/"><em>Cybermatics 2023</em></a></b></font><br><br><br>
-</font></p><p align="center" style="margin-top: 5px; margin-bottom: 5px"><font size="-1" face="Arial"><font size="2" face="Arial"><b>Organizations</b>:<br><br>
-</font></font></p><table width="100%">
-<tbody><tr valign="middle">
-<th height="105" scope="row"><img src="images/StFX-LOGO.png" width="140" height="140"></th>
-<th height="105" scope="row"><img src="images/hn.jpg" width="157.5" height="147.7"></th>
-
-<th height="105" scope="row"><img src="images/6.jpg" width="140" height="140"></th>
-</tr>
-</tbody></table><font size="-1" face="Arial"><font size="2" face="Arial">
-<p></p>
-<!--<br/><font size="-1">Contact: <a href="mailto:ieee-blockchain2022@googlegroups.com">ieee-blockchain2022@googlegroups.com</a></font><br>-->
-<font size="-1">Copyright Blockchain-2023. Created and Maintained by Blockchain-2023 Web Team.</font>
-
-                            		
-                            																
-</font></font></div>
-
-</BODY>
-</HTML>
+                  <th height="105" scope="row">
+                    <img src="images/6.jpg" width="140" height="140" />
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <font size="-1" face="Arial"
+              ><font size="2" face="Arial">
+                <p></p>
+                <!--<br/><font size="-1">Contact: <a href="mailto:ieee-blockchain2022@googlegroups.com">ieee-blockchain2022@googlegroups.com</a></font><br>-->
+                <font size="-1"
+                  >Copyright Blockchain-2023. Created and Maintained by
+                  Blockchain-2023 Web Team.</font
+                >
+              </font></font
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <scispace-div id="scispace-extension-root"></scispace-div
+  ><grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
