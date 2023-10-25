@@ -1,525 +1,872 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<meta name="ProgId" content="Excel.Sheet">
-<meta name="Generator" content="Microsoft Excel 15">
-<link rel="File-List" href="filelist.xml">
-<title>Papers</title>
-<link rel="Stylesheet" href="stylesheet.css">
-<style>
-<!--table
-	{mso-displayed-decimal-separator:"\.";
-	mso-displayed-thousand-separator:"\,";}
-@page
-	{margin:.75in .7in .75in .7in;
-	mso-header-margin:.3in;
-	mso-footer-margin:.3in;}
-ruby
-	{ruby-align:left;}
-rt
-	{color:windowtext;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:宋体;
-	mso-generic-font-family:auto;
-	mso-font-charset:134;
-	mso-char-type:none;
-	display:none;}
--->
-</style>
-<!--[if !supportTabStrip]--><script language="JavaScript">
-<!--
-function fnUpdateTabs()
- {
-  if (parent.window.g_iIEVer>=4) {
-   if (parent.document.readyState=="complete"
-    && parent.frames['frTabs'].document.readyState=="complete")
-   parent.fnSetActiveSheet(0);
-  else
-   window.setTimeout("fnUpdateTabs();",150);
- }
-}
-//-->
-</script>
-<!--[endif]-->
-</head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Blockchain - 2023</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
 
-<body link="blue" vlink="purple" class="xl65" data-new-gr-c-s-check-loaded="14.1134.0" data-gr-ext-installed="">
+    <link rel="shortcut icon" href="images/atc.ico" />
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      @keyframes scispace-copilot-fade-in {
+        0% {
+          visibility: hidden;
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .scispace-plugin-maximized {
+        width: calc(100% - 420px) !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        background-color: #fff;
+        position: absolute;
+        z-index: 2147483655;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] div {
+        font-family: inherit !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        div
+        .scispace-plugin-highlight-cta-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-radius: 6px;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-hightlight-tooltip {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in {
+        opacity: 0;
+        animation: scispace-copilot-fade-in 130ms ease-in-out 50ms forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"].scispace-highlight-menu-fade-in.hide {
+        opacity: 0;
+        animation: fade-out 100ms ease-in-out forwards;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-divider {
+        margin: 8px 0px;
+        flex-shrink: 0;
+        border-width: 0px thin 0px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        align-self: stretch;
+        background: #fff;
+        opacity: 0.6;
+        width: 1px !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu
+        > button {
+        height: 100%;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:hover
+        .scispace-highlight-menu {
+        border-radius: 6px;
+        display: block;
+        position: absolute;
+        top: 36px;
+        background-color: #fff;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-dropdown-menu:visited
+        .scispace-highlight-menu {
+        display: block;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu {
+        width: max-content;
+        box-shadow: rgba(18, 24, 26, 0.25) 0 3px 4px;
+        display: none;
+        padding: 10px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > button {
+        white-space: nowrap;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        svg {
+        width: 20px;
+        height: 20px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        .scispace-highlight-menu
+        > p {
+        color: #252f35;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        margin-bottom: 8px;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"] button {
+        font-family: inherit !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        margin: 0 !important;
+        cursor: pointer;
+        outline: none;
+        color: #252f35 !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        background-color: #fff !important;
+        border: none;
+        border-radius: 6px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-transform: none !important;
+        height: max-content !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:hover {
+        background-color: #f2f3f3 !important;
+      }
+      div[data-section="data-scispace-plugin-highlight-container"]
+        button:disabled {
+        opacity: 0.4 !important;
+        color: #252f35 !important;
+      }
+      .scispace-plugin-alert-overlay {
+        --tw-bg-opacity: 1;
+        background-color: #12181a;
+        background-color: rgb(18 24 26 / var(--tw-bg-opacity));
+        opacity: 0.5;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: fixed;
+        z-index: 2147483650;
+      }
+      .scispace-plugin-alertdialog {
+        width: 384px;
+        position: fixed;
+        top: calc(50% - 100px);
+        left: calc(50% - 192px);
+        padding: 24px;
+        border-radius: 0.375rem;
+        --tw-bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        z-index: 2147483651;
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+          var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .scispace-plugin-alertdialog .scispace-plugin-alertdialog-cta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+      }
+      .scispace-plugin-alertdialog h2,
+      .scispace-plugin-alertdialog p {
+        margin: 0 !important;
+      }
+      .scispace-plugin-alertdialog p {
+        margin-top: 12px !important;
+      }
+      .scispace-plugin-alertdialog h2 > span,
+      .scispace-plugin-alertdialog p > span {
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        text-decoration-line: none;
+        line-height: 28px;
+        --tw-text-opacity: 1;
+        color: #47555a;
+        color: rgb(71 85 90 / var(--tw-text-opacity));
+      }
+      .scispace-plugin-alertdialog h2 > span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .scispace-plugin-alertdialog p > span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .scispace-plugin-alertdialog button {
+        font-family: inherit !important;
+        flex-direction: row;
+        outline: none;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 8px;
+        --tw-bg-opacity: 1;
+        border-radius: 0.375rem;
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 80px;
+        height: 36px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #47555a;
+        border: 0.8px solid #c6c8ca !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .scispace-plugin-alertdialog button:disabled {
+        opacity: 0.4 !important;
+      }
+      .scispace-plugin-alertdialog button.buttonPrimary {
+        border-width: 0px;
+        color: #fff;
+        background-color: #fa6400;
+        background-color: rgb(250 100 0 / var(--tw-bg-opacity));
+      }
+      .scispace-plugin-alertdialog button.buttonClose {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: inline-flex;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.375rem;
+        background: #e4e6e8;
+        border: none !important;
+        padding: 0 !important;
+      }
+      .scispace-plugin-alertdialog button.gap-6 {
+        gap: 24px;
+      }
+      .scispace-plugin-alertdialog button.font-neutral-600 {
+        color: #58666c !important;
+        font-size: 16px !important;
+      }
+      @media print {
+        #scispace-extension-root {
+          visibility: hidden;
+        }
+        .scispace-plugin-maximized {
+          width: initial !important;
+        }
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .detaild_insights_with_copilot_cta {
+        padding: 2px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: max-content;
+        cursor: pointer;
+        margin: 0px !important;
+      }
+      .detaild_insights_with_copilot_cta svg {
+        width: 13px;
+        height: 13px;
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta svg:hover {
+        color: #fa6400;
+      }
+      .detaild_insights_with_copilot_cta p {
+        margin: 0px !important;
+        margin-right: 4px !important;
+        color: #fa6400;
+        font-size: 14px;
+      }
+      .detaild_insights_with_copilot_cta:hover,
+      .detaild_insights_with_copilot_cta:focus,
+      .detaild_insights_with_copilot_cta:active {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+      .detaild_insights_with_copilot {
+        max-width: 720px;
+        padding: 12px;
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: max-content;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+      }
+      .detaild_insights_with_copilot p {
+        margin: 0px !important;
+        margin-right: 10px !important;
+        font-size: 15px !important;
+        max-width: 420px;
+        text-align: left;
+      }
+      @media screen and (max-width: 768px) {
+        .detaild_insights_with_copilot {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+    </style>
+    <style>
+      .search_with_copilot {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        padding: 6px 8px;
+        cursor: pointer;
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .search_with_copilot:hover {
+        color: #fa6400;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+      }
+      .search_with_copilot > svg {
+        width: 21px;
+        height: 21px;
+        color: #fa6400;
+      }
+      .search_with_copilot_wrapper {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "ProximaVara-Roman";
+        src: url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.f99ab2034eea98d11ef4.woff2)
+            format("woff2"),
+          url(chrome-extension://cipccbpjpemcnijhjcdjmkjhmhniiick/static/fonts/proxima-vara-roman-black.fe9b55be9cb49a68107a.woff)
+            format("woff");
+        font-weight: 100 1000;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .read_with_copilot {
+        border-radius: 4px;
+        border: 1px solid #e4e6e8;
+        background: #fff !important;
+        color: #fa6400;
+        padding: 2px 12px;
+        text-align: center;
+        font-family: "ProximaVara-Roman", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif",
+          '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"' !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        height: max-content;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .read_with_copilot:hover,
+      .read_with_copilot:active,
+      .read_with_copilot:focus {
+        color: #fa6400;
+        background-color: #fff !important;
+        border: 1px solid #e4e6e8;
+        outline: none !important;
+      }
+    </style>
+    <style>
+      .scispace-widget.scispace-extension-widget {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .scispace-search.scispace-extension-search {
+        width: max-content;
+        height: max-content;
+        min-width: fit-content;
+      }
+      .scispace_google_scholar_search {
+        position: absolute;
+        right: 38px;
+        top: 0.8px;
+        background-color: #fff;
+      }
+      .scispace_science_direct_search_page {
+        position: absolute;
+        right: 44px;
+        top: 23px;
+      }
+      .scispace-detailed-insights {
+        width: auto;
+        height: max-content;
+        display: flex;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1119.0" data-gr-ext-installed="">
+    <div style="margin: 0px auto; width: 1050px; position: relative">
+      <div id="framecontentTop">
+        <img border="0" src="images/banner.jpg" width="1100" height="229" />
+      </div>
 
-<table border="0" cellpadding="0" cellspacing="0" width="1424" style="border-collapse:
- collapse;table-layout:fixed;width:1069pt">
- <colgroup><col class="xl65" width="96" style="mso-width-source:userset;mso-width-alt:3276;
- width:72pt">
- <col class="xl65" width="375" style="mso-width-source:userset;mso-width-alt:12800;
- width:281pt">
- <col class="xl65" width="300" style="mso-width-source:userset;mso-width-alt:10240;
- width:225pt">
- <col class="xl65" width="375" style="mso-width-source:userset;mso-width-alt:12800;
- width:281pt">
- <col class="xl65" width="66" span="2" style="width:50pt">
- <col class="xl65" width="80" style="mso-width-source:userset;mso-width-alt:2730;
- width:60pt">
- <col class="xl65" width="66" style="width:50pt">
- </colgroup><tbody><tr class="xl78" height="19" style="height:14.25pt">
-  <td height="19" class="xl78" width="96" style="height:14.25pt;width:72pt">#</td>
-  <td class="xl78" width="375" style="border-left:none;width:281pt">Title</td>
-  <td class="xl78" width="300" style="border-left:none;width:225pt">First author
-  email</td>
-  <td class="xl78" width="375" style="border-left:none;width:281pt">Authors</td>
-  <td class="xl78" width="66" style="border-left:none;width:50pt">Type</td>
-  <td class="xl78" width="66" style="border-left:none;width:50pt">Uploaded</td>
-  <td class="xl78" width="80" style="border-left:none;width:60pt">Registration</td>
-  <td class="xl78" width="66" style="border-left:none;width:50pt">Payment</td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570945950</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">A Method and
-  Platform for Security Advisory Dissemination Leveraging Web3 Technologies</td>
-  <td class="xl68" style="border-top:none;border-left:none">jannik.sommer@sommerhouse.net</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Jannik Lucas
-  Sommer; Magnus Mølgaard Lund; Nicola Cibin; Michele Albano</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570948977</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Decision
-  Models for Selecting Patterns in Governance-Driven Blockchain Systems</td>
-  <td class="xl68" style="border-top:none;border-left:none">yue.liu@data61.csiro.au</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Yue
-  Liu; Qinghua Lu; Hye-young Paik; Guangsheng Yu; Liming Zhu</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570949141</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">PureLottery:
-  Fair Leader Election Without Decentralized Random Number Generation</td>
-  <td class="xl68" style="border-top:none;border-left:none">jonas.ballweg@tum.de</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Jonas
-  Ballweg; Zhuo Cai; Amir Kafshdar Goharshady</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570949408</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Group-Oriented
-  Multi-Signature Supporting Monotonic Endorse Policies in Hyperledger Fabric</td>
-  <td class="xl68" style="border-top:none;border-left:none">zhangp@szu.edu.cn</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Peng
-  Zhang; Yongwen Huang; Fa Ge; Yuhong Liu</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570949745</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Smart
-  Parking Dapp: A Trust Minimised Smart Parking Solution</td>
-  <td class="xl68" style="border-top:none;border-left:none">nriz3@student.monash.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Nazim
-  Rizvic; Amin Sakzad; Arash Mirzaei; Taha H. Rashidi</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570950093</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Efficiency-Enhanced
-  Blockchain-Based Client Selection in Heterogeneous Federated Learning</td>
-  <td class="xl68" style="border-top:none;border-left:none">3220211023@bit.edu.cn</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Zhiqi
-  Lei; Keke Gai; Jing Yu; Liehuang Zhu; Kim-Kwang Raymond Raymond Choo</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570950189</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Securing
-  Smart UAV Delivery Systems Using Zero Trust Principle-Driven Blockchain
-  Architecture</td>
-  <td class="xl68" style="border-top:none;border-left:none">dongc@deakin.edu.au</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Chengzu
-  Dong; Shantanu Pal; Qi An; Aiting Yao; Frank Jiang; Zhiyu XU; Shiping Chen;
-  Xiao Liu</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570950359</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">BBB-Voting:
-  Self-Tallying End-To-End Verifiable 1-Out-Of-k Blockchain-Based Boardroom
-  Voting</td>
-  <td class="xl68" style="border-top:none;border-left:none">ihomoliak@fit.vutbr.cz</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Ivan
-  Homoliak; Zengpeng Li; Pawel Szalachowski</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570951129</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Account
-  Abstraction, Analysed</td>
-  <td class="xl68" style="border-top:none;border-left:none">qinwangtech@gmail.com</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Qin
-  Wang; Shiping Chen</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570951941</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Towards
-  Scalable Cross-Chain Messaging</td>
-  <td class="xl68" style="border-top:none;border-left:none">joao.massarichervinski@monash.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Joāo
-  Otávio M. Chervinski; Diego Kreutz; Jiangshan Yu</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570954183</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">SCU:
-  A Hardware Accelerator for Smart Contract Execution</td>
-  <td class="xl68" style="border-top:none;border-left:none">tlu4@lsu.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Tao
-  Lu; Lu Peng</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570954265</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Blockchain-Based
-  Trustless Fair Payment Protocol for Verifiable Confidential Outsourcing
-  Computation</td>
-  <td class="xl68" style="border-top:none;border-left:none">hesslee@hku.hk</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Hiu
-  Long Lee; Man Ho Allen Au</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570955023</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Blockchain-Based
-  Smart Contracts for Land Title Registry Opportunities and Adaption for Fiji</td>
-  <td class="xl68" style="border-top:none;border-left:none">rishalc@unifiji.ac.fj</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Rishal
-  Ravikesh Chand; ABM Shawkat Ali</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570955101</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Securing
-  IoT Firmware Dispatch System With Blockchain</td>
-  <td class="xl68" style="border-top:none;border-left:none">s212433@student.dtu.dk</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Vince
-  Biro; Wei-Yang Chiu; Weizhi Meng</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="57" style="height:42.75pt">
-  <td height="57" class="xl66" align="right" style="height:42.75pt;border-top:none">1570955710</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Cross-Chain
-  Based Spectrum Resources Transfer Technology Across Different Telecom
-  Operators Towards 6G Communication</td>
-  <td class="xl68" style="border-top:none;border-left:none">liumengjiang@buaa.edu.cn</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Mengjiang
-  Liu; Qianhong Wu; Kun Wang; Tianxu Han; Yiming Hei</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl66" align="right" style="height:14.25pt;border-top:none">1570955752</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Fault-Tolerant
-  Verifiable Encrypted Search on Blockchain</td>
-  <td class="xl68" style="border-top:none;border-left:none">xche0295@student.monash.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Xuan
-  Chen; Shujie Cui</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570955787</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">iBCTrans:
-  A Practical Blockchain-Based Framework for Cellular Vehicular-To-Everything
-  Networks</td>
-  <td class="xl68" style="border-top:none;border-left:none">wy95@njit.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Wei
-  Yao; Yuhong Liu; Fadi Deek; Guiling Wang</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570955807</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Crisis
-  of Trust: Analyzing the Verifier's Dilemma in Ethereum's Proof-Of-Stake
-  Blockchain</td>
-  <td class="xl68" style="border-top:none;border-left:none">daria.smuseva@unive.it</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Daria
-  Smuseva; Ivan Malakhov; Andrea Marin; Sabina Rossi</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570955849</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">A
-  Community-Based Strategy for Blockchain Sharding: Enabling More
-  Budget-Friendly Transactions</td>
-  <td class="xl68" style="border-top:none;border-left:none">zixu.zhang@student.uts.edu.au</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Zixu
-  Zhang; Ying Wang; Guangsheng Yu; Xu Wang; Ming Zhang; Wei Ni; Ren Ping Liu</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl66" align="right" style="height:28.5pt;border-top:none">1570960705</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">A
-  Blockchain-Based Approach to Improving Smart Home Security With
-  Situation-Aware Access Control</td>
-  <td class="xl68" style="border-top:none;border-left:none">zlin85@asu.edu</td>
-  <td class="xl67" width="375" style="border-top:none;border-left:none;width:281pt">Zhicheng
-  Lin; Stephen Yau</td>
-  <td class="xl69" style="border-top:none;border-left:none">Full</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570940625</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Blockchain-Based
-  Identity Authentication Oriented to Multi-Cluster UAV Networking</td>
-  <td class="xl72" style="border-top:none;border-left:none">22031212308@stu.xidian.edu.cn</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Zesong
-  Dong; Wei Tong; Zhiwei Zhang; Jian Li; Weidong Yang; Yulong Shen</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570948417</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Incentive
-  Attacks on DAG-Based Blockchains With Random Transaction Selection</td>
-  <td class="xl72" style="border-top:none;border-left:none">iperesini@fit.vutbr.cz</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Martin
-  Perešíni; Ivan Homoliak; Federico Matteo Bencic; Martin Hrubý; Kamil Malinka</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570949328</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Mitosis:
-  A Dynamic Relay Sharding Protocol for Enhanced Scalability</td>
-  <td class="xl72" style="border-top:none;border-left:none">wangkeyuan@ict.ac.cn</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Keyuan
-  Wang; Linpeng Jia; Zhaoxiong Song; Yi Sun</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570949330</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Understanding
-  the Cryptocurrency Free Giveaway Scam Disseminated on Twitter Lists</td>
-  <td class="xl72" style="border-top:none;border-left:none">kli5@sdsu.edu</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Kai
-  Li; Darren Lee; Shixuan Guan</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570950033</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">The
-  Validator's Dilemma in PoW Blockchain: An Evolutionary Game Perspective</td>
-  <td class="xl72" style="border-top:none;border-left:none">s2330142@u.tsukuba.ac.jp</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Liang
-  Liu; Qiao Wang; Stephen John Turnbull; Kazumasa Omote</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570950110</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Pricing
-  Mechanism of Non-Fungible Token (NFT) Driven by Rarity Design</td>
-  <td class="xl72" style="border-top:none;border-left:none">Wenze.Xiong22@student.xjtlu.edu.cn</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Wenze
-  Xiong; Yetong Wang; Wanxin Li; Jie Zhang; Hao Guo</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570950421</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Fee-Redistribution
-  Smart Contracts for Transaction-Fee-Based Regime of Blockchains</td>
-  <td class="xl72" style="border-top:none;border-left:none">xbudin05@stud.fit.vutbr.cz</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Rastislav
-  Budinsky; Ivana Stancikova; Ivan Homoliak</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570954052</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Joint
-  Pricing for Carbon and Electricity Trading in Blockchain-Based Smart Grids: A
-  Two-Stage Game Approach</td>
-  <td class="xl72" style="border-top:none;border-left:none">xuwang@zjnu.edu.cn</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Wang
-  Xu; Feilong Lin; Riheng Jia; Changbing Tang; Minglu Li</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570954088</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">A
-  Benchmark for Different Implementations of Zero-Knowledge Proof Systems</td>
-  <td class="xl72" style="border-top:none;border-left:none">max.kobelt@tuhh.de</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Max
-  Kobelt; Michael Sober; Stefan Schulte</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="19" style="height:14.25pt">
-  <td height="19" class="xl70" align="right" style="height:14.25pt;border-top:none">1570954266</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">The
-  Blockchain Trilemma Described by a Formula</td>
-  <td class="xl72" style="border-top:none;border-left:none">nakai.taishi.35x@st.kyoto-u.ac.jp</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Taishi
-  Nakai; Akira Sakurai; Shiori Hironaka; Kazuyuki Shudo</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570955532</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Statically
-  Checking Missing Input Validations in Solidity Smart Contracts - A Case Study</td>
-  <td class="xl72" style="border-top:none;border-left:none">sundas.munir@hh.se</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Sundas
-  Munir; Mirza Sanam Iqbal Baig; Mah Noor; Syeda Hina Murad</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570955637</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Multi-Blockchain
-  Model for Data Sharing With Bell-LaPadula Access Control</td>
-  <td class="xl72" style="border-top:none;border-left:none">p2008975@mpu.edu.mo</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Hsiau
-  Chuen Chong; K. L. Eddie Law</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570955664</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Mitigate
-  Gender Bias in Construction: Fusion of Deep Reinforcement Learning-Based
-  Contract Theory and Blockchain</td>
-  <td class="xl72" style="border-top:none;border-left:none">Z21070272@s.upc.edu.cn</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Zijun
-  Zhan; Yaxian Dong; Daniel Mawunyo Doe; Yuqing Hu; Shuai Li; Shaohua Cao; Wei
-  Li; Zhu Han</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570955793</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">AgBIS:
-  A Blockchain-Enabled Crop Insurance Platform Against Adverse Selection, Moral
-  Hazard, and Insurance Frauds</td>
-  <td class="xl72" style="border-top:none;border-left:none">zhliao@iastate.edu</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Zhonghao
-  Liao; Chaoqun Lu; Mark Mba-Wright; Hongli Feng; Yong Guan</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <tr height="38" style="height:28.5pt">
-  <td height="38" class="xl70" align="right" style="height:28.5pt;border-top:none">1570955835</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">ALGOMOVE
-  - A Move Embedding for Algorand</td>
-  <td class="xl72" style="border-top:none;border-left:none">lorenzo.benetollo@unive.it</td>
-  <td class="xl71" width="375" style="border-top:none;border-left:none;width:281pt">Lorenzo
-  Benetollo; Michele Bugliesi; Silvia Crafa; Sabina Rossi; Alvise Spanò</td>
-  <td class="xl73" style="border-top:none;border-left:none">short</td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
-  <td class="xl65"></td>
- </tr>
- <!--[if supportMisalignedColumns]-->
- <tr height="0" style="display:none">
-  <td width="96" style="width:72pt"></td>
-  <td width="375" style="width:281pt"></td>
-  <td width="300" style="width:225pt"></td>
-  <td width="375" style="width:281pt"></td>
-  <td width="66" style="width:50pt"></td>
-  <td width="66" style="width:50pt"></td>
-  <td width="80" style="width:60pt"></td>
-  <td width="66" style="width:50pt"></td>
- </tr>
- <!--[endif]-->
-</tbody></table>
+      <script language="JavaScript">
+        var currentMenuItem = "";
+      </script>
+
+      <div
+        id="framecontentLeft"
+        style="position: absolute; left: -5px; top: 225px; height: auto"
+      >
+        <div class="innertube2">
+          <li class="menu">
+            <a href="index.html">
+              <div class="div-text">
+                <font size="3"><b>Home</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="cfp.html">
+              <div class="div-text">
+                <font size="3"><b>Call for Papers</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="cfw.html">
+              <div class="div-text">
+                <font size="3"><b>Call for Workshops</b></font>
+              </div>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="cft.html">
+            <div class="div-text">
+            <font size="3"><b>Call for Tutorial</b></font>
+            </div>
+            </a>
+            </li>
+          <li class="menu">
+            <a href="oc.html">
+              <div class="div-text">
+                <font size="3"><b>Organizing Committee</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="tpc.html">
+              <div class="div-text">
+                <font size="3"><b>Program Committee</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="keynotes.html">
+              <div class="div-text">
+                <font size="3"><b>Congress Keynotes</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="workshops.html">
+              <div class="div-text">
+                <font size="3"><b>Workshops and Symposia</b></font>
+              </div>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="tba.html">
+              <div class="div-text">
+                <font size="3"><b>Symposium</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="https://ieee-cybermatics.github.io/si.html">
+              <!--<a href= 'si.html'>-->
+              <div class="div-text">
+                <font size="3"><b>Special Issues</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Program-Cybermatics2022-final.pdf' target="_blank">-->
+              <div class="div-text">
+                <font size="3" color="#FF0000"><b>Program Booklet</b></font>
+              </div>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="ps.html">
+              <div class="div-text">
+                <font size="3"><b>Paper Submission</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='accepted_paper.pdf' target='_blank'>-->
+              <div class="div-text">
+                <font size="3" color="#FFDA33"><b>Accepted Paper List</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='https://ieeecps.org/#!/auth/login?ak=1&pid=4X47uCZErxrngFwaKdRXtL' target='_blank'>-->
+              <div class="div-text">
+                <font size="3" color="#FFDA33"
+                  ><b>Final Paper Instruction</b></font
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href= 'https://link.webropolsurveys.com/EventParticipation/EventPublic/4c716271-86e4-4d55-93fa-75d4f21c60c7?displayId=Fin2577425' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Registration</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Venue_Hotels.html' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Venue &amp; Hotels</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="remind.html">
+              <!--<a href='Visa_Travel.html' target='_blank'>-->
+              <div class="div-text">
+                <font size="3"><b>Visa &amp; Travel</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/ithings/"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>iThings 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/cpscom" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>CPSCom 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/greencom"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>GreenCom 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a
+              href="https://ieee-cybermatics.org/2023/smartdata"
+              target="_blank"
+            >
+              <div class="div-text">
+                <font size="3"><b>SmartData 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="https://www.cbd-conference.net/2023/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>CBD 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/icpads/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>ICPADS 2023</b></font>
+              </div>
+            </a>
+          </li>
+
+          <li class="menu">
+            <a href="https://ieee-cybermatics.org/2023/icess/" target="_blank">
+              <div class="div-text">
+                <font size="3"><b>ICESS 2023</b></font>
+              </div>
+            </a>
+          </li>
+        </div>
+      </div>
+
+      <div
+        id="framecontentRight"
+        style="position: absolute; left: 860px; top: 212px; height: auto"
+      >
+        <div class="innertube2">
+          <div align="center">
+            <p></p>
+            <p></p>
+            <table border="0" width="140%">
+              <tbody><tr> 
+                <td bgcolor="#0099D0" style="border-style: none; border-width: medium"> 
+
+                  <p align="center" style="margin-top:5px; margin-bottom: 5px"><font size="4" face="Arial" color="#FFFFFF"><b>Important Dates</b></font></p>
+                      </td>
+              </tr><tr>
+                <td class="background-style" style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px">
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"> July 15, 2023</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Workshop Proposal Due</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><strike>September 01, 2023</strike><br>September 16, 2023<br><font size="3" color="#FF0000">(Firmed, no extension)</font><br>(Anywhere on Earth - AoE)</font></p>
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"></font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Paper Submission Deadline</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">September 30, 2023</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Tutorial Proposal Due</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">October 15, 2023</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Author Notification</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">October 31, 2023</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Camera-ready and Registration</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">Coming soon</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Registration Deadline</b></font></p>
+        <hr size="1" noshade="" color="#00ccff">
+
+                  <p align="center" style="margin-top: 10px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000">December 17-21, 2023</font></p>
+                  <p align="center" style="margin-top: 0px; margin-bottom: 0px"><font size="3" face="Arial" color="#000000"><b>Conference Date</b></font></p>
+                </td>
+              </tr>
 
 
+          </tbody></table>
+          </div>
 
+          <br />
+          <!-- Sponsor's Logo -->
+          <div align="center">
+            <table border="0" width="140%">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                    colspan="2"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Arial" color="#FFFFFF"
+                        ><b>Sponsors</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/1.jpg" width="120" height="80" />
+                  </th>
+                </tr>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/2.jpg" width="118" height="45" />
+                  </th>
+                </tr>
+
+                <tr>
+                  <th height="105" scope="row">
+                    <img src="pics/3.jpg" width="115" height="63" />
+                  </th>
+                </tr>
+                <!--
+<tr>
+<th height="105" scope="row"><img src="pics/cpss.png" width="130" height="55" /></th>
+		</tr>
+ <tr>
+<th height="105" scope="row"><img src="pics/bc.png" width="121" height="51" /></th>
+</tr>
+<tr>
+<th height="105" scope="row"><img src="pics/tems.jpg" width="140" height="67" /></th><br><br>
+</tr>-->
+                <!--
+<tr>
+<th height="105" scope="row"><img src="pics/SWTC2.png" width="130" height="60" /></th>
+</tr>
+<tr>
+<th height="105" scope="row"><img src="pics/hitc.jpg" width="130" height="67" /></th>
+</tr>-->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="maincontent"
+        style="
+          width: 660px;
+          position: absolute;
+          left: 200px;
+          top: 223px;
+          height: auto;
+        "
+      >
+        <div class="innertube">
+          <script language="JavaScript">
+            currentMenuItem = "home";
+            preLoadImages(); // set the color for previous selected menu
+          </script>
+
+          <!-- the context -->
+
+          <div align="center">
+            <table border="0" width="100%" id="table11" bordercolor="#BEC8EC">
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#0099D0"
+                    style="border-style: none; border-width: medium"
+                  >
+                    <p
+                      align="center"
+                      style="margin-top: 5px; margin-bottom: 5px"
+                    >
+                      <font size="4" face="Arial" color="#FFFFFF"
+                        ><b>Coming soon</b></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="background-style"
+                    style="
+                      padding-right: 10px;
+                      padding-left: 10px;
+                      padding-bottom: 10px;
+                      padding-top: 10px;
+                    "
+                  >
+                    <p
+                      align="justify"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <font color="#000000" face="Arial">
+                        <!--			
+<b>Paper Submission Guideline</b><br>
+<br>
+All papers need to be submitted electronically through the conference submission website (EDAS) in word or PDF format at: <a href='https://edas.info/N27356'>https://edas.info/N27356</a> . The materials presented in the papers should not be published or under submission elsewhere. Each paper is limited to 8 pages (or 10 pages with overlength charge) including figures and references using the IEEE Computer Society Proceedings manuscripts style (two columns, single-spaced, font size 10). Manuscript Templates for Conference Proceedings can be found at <br>
+<a href='https://www.ieee.org/conferences_events/conferences/publishing/templates.html'>https://www.ieee.org/conferences_events/conferences/publishing/templates.html</a> <br>
+<br>
+Accepted papers will be included in the conference proceedings published by the IEEE Computer Society Press (indexed by EI) and IEEE Xplore. At least one of the authors of any accepted paper must register and present the paper. Best Paper Awards will be presented at the conference. High quality papers will be nominated to publish at various journal special issues. <br>
+<br>
+For further information, please visit our website: <br>
+<a href='http://cse.stfx.ca/~cybermatics/2020/greencom/'>http://cse.stfx.ca/~cybermatics/2020/greencom/</a><br>
+			
+				<br>		 
+			</font>		
+			</p>	
